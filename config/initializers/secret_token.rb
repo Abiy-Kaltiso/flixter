@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Flixter::Application.config.secret_key_base = '6923482d10168e7fadd713f18e59b09bf3a2287a5b250f1ec1bb913fecd5e979e893924d620010e18a70362e2d0fc4f26a99057a7077c0ceac9add2897bf2ed7'
+Thinkly::Application.config.secret_key_base = '6923482d10168e7fadd713f18e59b09bf3a2287a5b250f1ec1bb913fecd5e979e893924d620010e18a70362e2d0fc4f26a99057a7077c0ceac9add2897bf2ed7'

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Flixter::Application.load_tasks
+Thinkly::Application.load_tasks
