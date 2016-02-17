@@ -1,0 +1,31 @@
+$fffoote: 60px;
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto (-$fffoote);
+  /* Pad bottom by footer height */
+  padding: 0 0 $fffoote;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height:$fffoote;
+  background-color: rgba(36,32,33,0.9);
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 300;
+  padding: 10px 0px;
+  margin-top: 30px;
+}
+
+#footer a {
+	color:white;
+}
