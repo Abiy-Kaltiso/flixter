@@ -1,31 +1,44 @@
-$fffoote: 60px;
-html,
-body {
+html {
   height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+  box-sizing: border-box;
 }
 
-/* Wrapper for page content to push down footer */
-#wrap {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
   min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto (-$fffoote);
-  /* Pad bottom by footer height */
-  padding: 0 0 $fffoote;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Set the fixed height of the footer here */
-#footer {
-  height:$fffoote;
-  background-color: rgba(36,32,33,0.9);
-  color: white;
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 300;
-  padding: 10px 0px;
-  margin-top: 30px;
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
 }
 
-#footer a {
-	color:white;
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #101010;
+  text-align: center;
+  color: orange;
 }

@@ -17,7 +17,9 @@
 	clear:both;
 }
 
-.navbar-inverse .navbar-brand {
+body { padding-top: 70px; }
+
+.navbar-inverse a.navbar-brand {
   color: #ED1515;
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
@@ -28,6 +30,7 @@
 	font-family: "helvetica Neue", helvetica;
 	font-weight: 200;
 	box-shadow: 0px 1px 3px #2a2a2a;
+	background-color: #101010;
 }
 
 .hero {
