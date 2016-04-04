@@ -2,10 +2,13 @@
 
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h1><div class="text-center"><%= @course.title %></div></h1>
+  <br />
+  <%= link_to 'Previe As Student', course_path(@course), class: 'btn btn-warning pull-right' %>
+  <div class="text-center"> <%= link_to'Add a new section...', new_instructor_course_section_path(@course) %> </div>
+  <hr />
 
   <div class="col-sm-4 col-xs-12">
-  	<span class ="label label-default"><%= number_to_currency @course.cost %></div></span>
+  	<span class ="label label-primary"><%= number_to_currency @course.cost %></div></span>
 
   <div class="col-sm-8 col-xs-12"><%= @course.description %></div>
-  
 </div>
